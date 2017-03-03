@@ -2,9 +2,7 @@ __author__ = 'Nazar Ner'
 
 import time
 
-
 class Farm:
-
 
     def __init__(self, app):
         self.app = app
