@@ -1,9 +1,7 @@
 __author__ = 'Nazar Ner'
 
 from selenium import webdriver
-
 from farm.farm import Farm
-
 
 
 class Application:
