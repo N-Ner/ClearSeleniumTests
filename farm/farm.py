@@ -39,7 +39,7 @@ class Farm:
     def login_user_accaunt(self):
         driver = self.app.driver
         driver.find_element_by_name("scalrLogin").send_keys('test@scalr.com')
-        driver.find_element_by_name("scalrPass").send_keys('^Qb?${q8DB')
+        driver.find_element_by_name("scalrPass").send_keys('**********')
         time.sleep(1)
         driver.find_element_by_id("button-1030").click()
         time.sleep(2)
