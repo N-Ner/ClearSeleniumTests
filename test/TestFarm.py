@@ -7,9 +7,9 @@ def test_scalr_farm(app):
 
     app.farm.go_to_container(containerid)
     app.farm.login_user_accaunt()
-    app.farm.goto_farms_list()
-    app.farm.search_farm(containerid, farmid)
-    app.farm.add_farm_role()
-    app.farm.launch_farm(containerid, farmid)
+    app.farm.goto_list()
+    app.farm.search(containerid, farmid)
+    app.farm.add_role()
+    app.farm.launch(containerid, farmid)
 
 
