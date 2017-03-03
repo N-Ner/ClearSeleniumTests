@@ -7,7 +7,6 @@ class Farm:
     def __init__(self, app):
         self.app = app
 
-
     def launch_farm(self, containerid, farmid):
         driver = self.app.driver
         driver.get('http://' + containerid + self.app.farmsquery + farmid)
