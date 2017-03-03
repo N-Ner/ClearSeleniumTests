@@ -7,7 +7,7 @@ class Farm:
     def __init__(self, app):
         self.app = app
 
-    def launch_farm(self, containerid, farmid):
+    def launch(self, containerid, farmid):
         driver = self.app.driver
         driver.get('http://' + containerid + self.app.farmsquery + farmid)
         time.sleep(3)
@@ -15,7 +15,7 @@ class Farm:
         driver.find_element_by_css_selector("a.x-btn-default-small-focus").click()
         time.sleep(3)
 
-    def add_farm_role(self):
+    def add_role(self):
         driver = self.app.driver
         driver.find_element_by_xpath("//a[.='Add farm role']").click()
         time.sleep(2)
@@ -27,12 +27,12 @@ class Farm:
         driver.find_element_by_xpath("//a[.='Save farm']").click()
         time.sleep(1)
 
-    def search_farm(self, containerid, farmid):
+    def search(self, containerid, farmid):
         driver = self.app.driver
         driver.get('http://' + containerid + self.app.farmsquery + farmid)
         driver.find_element_by_css_selector(".x-grid-icon-configure").click()
 
-    def goto_farms_list(self):
+    def goto_list(self):
         driver = self.app.driver
         driver.find_element_by_css_selector("#button-1162-btnInnerEl").click()
 
