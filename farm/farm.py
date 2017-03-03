@@ -32,10 +32,6 @@ class Farm:
         driver.get('http://' + containerid + self.app.farmsquery + farmid)
         driver.find_element_by_css_selector(".x-grid-icon-configure").click()
 
-    def goto_list(self):
-        driver = self.app.driver
-        driver.find_element_by_css_selector("#button-1162-btnInnerEl").click()
-
     def login_user_accaunt(self):
         driver = self.app.driver
         driver.find_element_by_name("scalrLogin").send_keys('test@scalr.com')
