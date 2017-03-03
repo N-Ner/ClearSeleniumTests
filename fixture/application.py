@@ -3,7 +3,6 @@ __author__ = 'Nazar Ner'
 from selenium import webdriver
 from farm.farm import Farm
 
-
 class Application:
 
     def __init__(self):
