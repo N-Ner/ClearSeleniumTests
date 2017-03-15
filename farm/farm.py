@@ -45,11 +45,12 @@ class Farm:
         driver = self.app.driver
         driver.get('http://' + containerid + self.app.farmsquery + farmid)
         driver.find_element_by_css_selector(".x-grid-icon-configure").click()
+        time.sleep(3)
 
-    def login_user_accaunt(self):
+    def login_user_accaunt(self, login, passw):
         driver = self.app.driver
-        driver.find_element_by_name("scalrLogin").send_keys('test@scalr.com')
-        driver.find_element_by_name("scalrPass").send_keys('**********')
+        driver.find_element_by_name("scalrLogin").send_keys(login)
+        driver.find_element_by_name("scalrPass").send_keys(passw)
         time.sleep(1)
         driver.find_element_by_id("button-1030").click()
         time.sleep(2)
