@@ -4,9 +4,11 @@ import time
 
 class Farm:
 
+    
     def __init__(self, app):
         self.app = app
 
+        
     def launch(self, containerid, farmid):
         driver = self.app.driver
         driver.get(
@@ -18,6 +20,7 @@ class Farm:
             "a.x-btn-default-small-focus").click()
         time.sleep(3)
 
+        
     def add_role(self):
         driver = self.app.driver
         driver.find_element_by_xpath(
@@ -26,6 +29,7 @@ class Farm:
         driver.find_element_by_xpath(
             "//a[.='Save farm']").click()
         time.sleep(1)
+    
     
     def search_by_field(self, farmrole, scope):
         driver = self.app.driver
@@ -43,6 +47,7 @@ class Farm:
             scope).click()
         time.sleep(2)
         
+        
     def search_quick_start(self):
         driver = self.app.driver
         driver.find_element_by_xpath(
@@ -54,6 +59,7 @@ class Farm:
             "//*[.='MySQL']").click()
         time.sleep(3)       
 
+        
     def search(self, containerid, farmid):
         driver = self.app.driver
         driver.get(
@@ -62,6 +68,7 @@ class Farm:
             ".x-grid-icon-configure").click()
         time.sleep(3)
 
+        
     def login_user_accaunt(self, login, passw):
         driver = self.app.driver
         driver.find_element_by_name(
@@ -73,8 +80,8 @@ class Farm:
             "button-1030").click()
         time.sleep(2)
 
+        
     def go_to_container(self, containerid):
         driver = self.app.driver
         driver.get(
             'http://' + containerid + self.app.base_url)
-
