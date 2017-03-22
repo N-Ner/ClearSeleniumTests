@@ -1,5 +1,6 @@
 __author__ = 'Nazar Ner'
 
+
 def test_scalr_farm(app):
     login = 'test@scalr.com'
     passw = '**********'
@@ -17,3 +18,4 @@ def test_scalr_farm(app):
     app.farm.search_by_field(farmrole, scope)
     app.farm.add_role()
     app.farm.launch(containerid, farmid)
+    
