@@ -5,6 +5,7 @@ from farm.farm import Farm
 
 class Application:
 
+    
     def __init__(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
@@ -13,6 +14,7 @@ class Application:
         self.farm = Farm(self)
         self.driver.maximize_window()
 
+        
     def destroy(self):
         self.driver.quit()
 
