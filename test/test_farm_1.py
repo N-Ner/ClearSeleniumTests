@@ -13,3 +13,4 @@ def test_scalr_farm(app):
     app.farm.search_quick_start()
     app.farm.add_role()
     app.farm.launch(containerid, farmid)
+    
