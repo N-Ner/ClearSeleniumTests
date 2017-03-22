@@ -1,7 +1,7 @@
 __author__ = 'Nazar Ner'
 
-def test_scalr_farm(app):
 
+def test_scalr_farm(app):
     login = 'test@scalr.com'
     passw = '**********'
     containerid = '8104b4ffeb57'
